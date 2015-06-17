@@ -1,0 +1,120 @@
+
+/* Wrap everything in 980px - if screen size is smaller than the fixed width, go respsonive */
+@media (max-width: 980px) {	
+	* {
+		box-sizing: border-box;
+	}
+	#container {		
+		width: 100%;
+		overflow: hidden;
+	}
+	header {
+		height: auto;	
+	}
+	#logo {
+		float: none;		
+	}
+	nav {
+		display: none;		
+		position: relative;
+		right: 0;
+		top: 0;
+		width: 100%;		
+	}
+	nav ul {
+		margin-top: 20px;
+	}
+	nav ul li {
+		float: none;
+		text-align: center;
+	}
+	.toggle-nav {			    
+	    width: 48px;
+	    height: 48px;
+	    float: right;
+	    display: block;
+	    margin: 44px 5px 0 0;
+	    background: url(../images/hamburger.png) no-repeat center center;
+	}
+	#intro {
+		width: 100%;
+		height: auto;
+	}
+	.group_bannner_right, .group_bannner_left {		
+		top: 0;
+		right: 0;		
+		margin: 0;
+		width: 100%;		
+		text-align: center;
+		position: relative;
+	}
+	.group_bannner_right img {
+		width: 100%;
+	}
+	.group_bannner_left h1, .group_bannner_left h2 {
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.group_bannner_left h2 {
+		padding-bottom: 20px;
+	}
+	.group1, .group2, .group3 {
+		width: 33%;
+		margin: 0;
+	}	
+	.group4, .group5 {
+		width: 100%;
+	}
+	.group5 p {
+		overflow: hidden;
+		padding: 0 15px 20px 60px;
+
+	}
+	.group5 .purple {				
+		padding: 0;
+		line-height: 1;
+		margin: 0 15px 0 -60px;
+	}	
+	footer .container {
+		width: 100%;
+	}
+	#FooterTree, #FooterTwo {
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		position: relative;
+		text-align: center;		
+	}
+	#FooterTree {		
+    	padding-top: 20px;
+    	padding-bottom: 12px;
+	}
+	.pikachoose, .pika-stage img {
+		max-width: 100%;
+	}
+}
+/* Some more fixes for when the screen size is under 640px - everything should stack from here on */
+@media (max-width: 640px) {
+	#logo img {
+		width: 180px;
+	}
+	.toggle-nav {
+		margin-top: 37px;
+	}
+	.group_bannner_left h1 {
+		font-size: 40px;
+	}
+	.group1, .group2, .group3 {
+		margin: 0;
+		width: 100%;
+		padding-top: 0;
+	}
+}
+@media (max-width: 640px) { 
+	.pika-thumbs li {
+		width: 33%;
+		margin: 0;
+	}
+}
